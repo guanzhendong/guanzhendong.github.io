@@ -16,19 +16,19 @@
   <meta name="author" content="guanzhendong">
   <meta name="keywords" content="iOS">
   
-    <meta name="description" content="#1.折叠代码 焦点在方法的实现体的方法名上,按comman键,则整个函数会被框住.用来标志这个方法的起点和终点 此时单击,出现菜单  在菜单里,有个Fold,可以用来折叠方法,这个折叠现在有个动画效果 常用的重构方式都已经集成在这个右键弹出菜单中了,可见,XCode9对于重构的支持度又增加了,以后重构代码将更加方便快捷 在XCode9之前,在变量或方法上,按CMD+单击,是直接Jump to D">
+    <meta name="description" content="1.折叠代码焦点在方法的实现体的方法名上,按comman键,则整个函数会被框住.用来标志这个方法的起点和终点 此时单击,出现菜单  在菜单里,有个Fold,可以用来折叠方法,这个折叠现在有个动画效果 常用的重构方式都已经集成在这个右键弹出菜单中了,可见,XCode9对于重构的支持度又增加了,以后重构代码将更加方便快捷 在XCode9之前,在变量或方法上,按CMD+单击,是直接Jump to Def">
 <meta property="og:type" content="article">
 <meta property="og:title" content="XCode9的新变化">
 <meta property="og:url" content="http://example.com/2018/01/10/XCode9%E7%9A%84%E6%96%B0%E5%8F%98%E5%8C%96/index.html">
 <meta property="og:site_name" content="guanzhendong">
-<meta property="og:description" content="#1.折叠代码 焦点在方法的实现体的方法名上,按comman键,则整个函数会被框住.用来标志这个方法的起点和终点 此时单击,出现菜单  在菜单里,有个Fold,可以用来折叠方法,这个折叠现在有个动画效果 常用的重构方式都已经集成在这个右键弹出菜单中了,可见,XCode9对于重构的支持度又增加了,以后重构代码将更加方便快捷 在XCode9之前,在变量或方法上,按CMD+单击,是直接Jump to D">
+<meta property="og:description" content="1.折叠代码焦点在方法的实现体的方法名上,按comman键,则整个函数会被框住.用来标志这个方法的起点和终点 此时单击,出现菜单  在菜单里,有个Fold,可以用来折叠方法,这个折叠现在有个动画效果 常用的重构方式都已经集成在这个右键弹出菜单中了,可见,XCode9对于重构的支持度又增加了,以后重构代码将更加方便快捷 在XCode9之前,在变量或方法上,按CMD+单击,是直接Jump to Def">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1208206-b370448f6270a193.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1208206-e6e600520c76877d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1208206-1793467b32024e4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1208206-3b8d699dad04f4ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="article:published_time" content="2018-01-10T02:19:38.000Z">
-<meta property="article:modified_time" content="2022-09-21T02:20:11.687Z">
+<meta property="article:modified_time" content="2022-09-21T09:46:03.780Z">
 <meta property="article:author" content="guanzhendong">
 <meta property="article:tag" content="iOS">
 <meta name="twitter:card" content="summary_large_image">
@@ -200,7 +200,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          891 字
+          888 字
         
       </span>
     
@@ -254,8 +254,7 @@
             
               <div class="markdown-body">
                 
-                <p>#1.折叠代码</p>
-<p>焦点在方法的实现体的方法名上,按comman键,则整个函数会被框住.用来标志这个方法的起点和终点</p>
+                <h1 id="1-折叠代码"><a href="#1-折叠代码" class="headerlink" title="1.折叠代码"></a>1.折叠代码</h1><p>焦点在方法的实现体的方法名上,按comman键,则整个函数会被框住.用来标志这个方法的起点和终点</p>
 <p>此时单击,出现菜单</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1208206-b370448f6270a193.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>在菜单里,有个Fold,可以用来折叠方法,这个折叠现在有个动画效果</p>
@@ -265,12 +264,10 @@
 <p>当然,如果你还是觉得以前的cmd+单击 跳转到变量定义,你更习惯,可以在</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1208206-e6e600520c76877d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>更改为以前那种行为</p>
-<p>#2.rename</p>
-<p>对一个方法或者变量的重命名,在方法上CMD+单击,出现的菜单,选择rename</p>
+<h1 id="2-rename"><a href="#2-rename" class="headerlink" title="2.rename"></a>2.rename</h1><p>对一个方法或者变量的重命名,在方法上CMD+单击,出现的菜单,选择rename</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1208206-1793467b32024e4c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>可以看到,它把重命名会出现的改动,都动画折叠起来,让你更有概念,将会影响哪些,更直观!</p>
-<p>#3.Folder和Group的同步性</p>
-<p>之前,我们在XCode中,更改Folder的名字,在FInder中工程对应的文件夹的名字并不会同步的改变,这会造成我们重命名文件夹变得非常不方便,往往要先在XCode中移除,然后在Finder中重命名,再添加回Xcode</p>
+<h1 id="3-Folder和Group的同步性"><a href="#3-Folder和Group的同步性" class="headerlink" title="3.Folder和Group的同步性"></a>3.Folder和Group的同步性</h1><p>之前,我们在XCode中,更改Folder的名字,在FInder中工程对应的文件夹的名字并不会同步的改变,这会造成我们重命名文件夹变得非常不方便,往往要先在XCode中移除,然后在Finder中重命名,再添加回Xcode</p>
 <p>现在 在Xcode9中重名命Folder,Finder中的也同步的改变了</p>
 <p>我们之前建议一个虚拟的group,并不会在对应的文件夹中建立真实的目录,当然,这可能是你需要的,也可能是你不需要的功能.在9中,默认行为改变了.变成了会建立对应的真实文件夹.如果还想像之前那样只是建立虚拟的group,需要选择New Group without Folder</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1208206-3b8d699dad04f4ec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" lazyload alt="image.png"></p>

@@ -16,12 +16,12 @@
   <meta name="author" content="guanzhendong">
   <meta name="keywords" content="iOS">
   
-    <meta name="description" content="#修改已有类的名称新建一个工程后，默认的AppDelegate.h，AppDelegate.m 和 ViewController.h，ViewController.m都是没有前缀的，如果你想给他们都加上前缀，可以点开AppDelegate.h，选中AppDelegate，右键－Refactor－Rename，  然后自己加上前缀（我加的是My），然后点击Preview，   save一下就好了，可">
+    <meta name="description" content="修改已有类的名称新建一个工程后，默认的AppDelegate.h，AppDelegate.m 和 ViewController.h，ViewController.m都是没有前缀的，如果你想给他们都加上前缀，可以点开AppDelegate.h，选中AppDelegate，右键－Refactor－Rename，  然后自己加上前缀（我加的是My），然后点击Preview，   save一下就好了，可以">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS 添加类前缀、修改类名">
 <meta property="og:url" content="http://example.com/2018/01/18/iOS-%E6%B7%BB%E5%8A%A0%E7%B1%BB%E5%89%8D%E7%BC%80%E3%80%81%E4%BF%AE%E6%94%B9%E7%B1%BB%E5%90%8D/index.html">
 <meta property="og:site_name" content="guanzhendong">
-<meta property="og:description" content="#修改已有类的名称新建一个工程后，默认的AppDelegate.h，AppDelegate.m 和 ViewController.h，ViewController.m都是没有前缀的，如果你想给他们都加上前缀，可以点开AppDelegate.h，选中AppDelegate，右键－Refactor－Rename，  然后自己加上前缀（我加的是My），然后点击Preview，   save一下就好了，可">
+<meta property="og:description" content="修改已有类的名称新建一个工程后，默认的AppDelegate.h，AppDelegate.m 和 ViewController.h，ViewController.m都是没有前缀的，如果你想给他们都加上前缀，可以点开AppDelegate.h，选中AppDelegate，右键－Refactor－Rename，  然后自己加上前缀（我加的是My），然后点击Preview，   save一下就好了，可以">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1208206-f4e18cba9265cfe8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1208206-fea9a09dcfe3de30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1208206-bd83b4eb6a6ffe73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1208206-85ea551b9cba5fb0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="article:published_time" content="2018-01-18T02:21:24.000Z">
-<meta property="article:modified_time" content="2022-09-21T02:21:57.147Z">
+<meta property="article:modified_time" content="2022-09-21T09:45:14.427Z">
 <meta property="article:author" content="guanzhendong">
 <meta property="article:tag" content="iOS">
 <meta name="twitter:card" content="summary_large_image">
@@ -202,7 +202,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          332 字
+          330 字
         
       </span>
     
@@ -256,7 +256,7 @@
             
               <div class="markdown-body">
                 
-                <p>#修改已有类的名称<br>新建一个工程后，默认的AppDelegate.h，AppDelegate.m 和 ViewController.h，ViewController.m都是没有前缀的，如果你想给他们都加上前缀，可以点开AppDelegate.h，选中AppDelegate，右键－Refactor－Rename，</p>
+                <h1 id="修改已有类的名称"><a href="#修改已有类的名称" class="headerlink" title="修改已有类的名称"></a>修改已有类的名称</h1><p>新建一个工程后，默认的AppDelegate.h，AppDelegate.m 和 ViewController.h，ViewController.m都是没有前缀的，如果你想给他们都加上前缀，可以点开AppDelegate.h，选中AppDelegate，右键－Refactor－Rename，</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1208206-f4e18cba9265cfe8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>然后自己加上前缀（我加的是My），然后点击Preview，</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1208206-fea9a09dcfe3de30.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" lazyload alt="image.png"></p>
@@ -264,7 +264,7 @@
 <p>save一下就好了，可以看到AppDelegate就变成了MyAppDelegate：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1208206-6b203dbd8f86e734.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>同样的操作应用于ViewController文件，就可以添加前缀了。</p>
-<p>#统一添加类前缀<br>如果想要在之后新建的所有类都加上前缀，就需要在Class Prefix处加上自己的前缀：</p>
+<h1 id="统一添加类前缀"><a href="#统一添加类前缀" class="headerlink" title="统一添加类前缀"></a>统一添加类前缀</h1><p>如果想要在之后新建的所有类都加上前缀，就需要在Class Prefix处加上自己的前缀：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1208206-bd83b4eb6a6ffe73.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>之后新建一个类就会自动有一个前缀了，如下图：</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/1208206-85ea551b9cba5fb0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" srcset="/img/loading.gif" lazyload alt="image.png"></p>

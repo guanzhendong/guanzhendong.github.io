@@ -16,15 +16,15 @@
   <meta name="author" content="guanzhendong">
   <meta name="keywords" content="iOS">
   
-    <meta name="description" content="##减少缩写命名缩写只用于通用专业术语，如 URL，不可自创命名缩写，如 Ctr、Msg。命名宁可长一些，也不要难于理解。 是否在看别人代码时各种缩写而不知其所以然？简短的名字确实比较好，但不可滥用缩写导致失去可读性。 ##过程化动作发生之前用 Will，发生之后用 Did，询问是否发生用 Should。 每个处理都是有一定过程的，这个处理往往会产生一些通知和回调，好的命名必须要明确当前过程中的步">
+    <meta name="description" content="减少缩写命名缩写只用于通用专业术语，如 URL，不可自创命名缩写，如 Ctr、Msg。命名宁可长一些，也不要难于理解。 是否在看别人代码时各种缩写而不知其所以然？简短的名字确实比较好，但不可滥用缩写导致失去可读性。 过程化动作发生之前用 Will，发生之后用 Did，询问是否发生用 Should。 每个处理都是有一定过程的，这个处理往往会产生一些通知和回调，好的命名必须要明确当前过程中的步骤。命名">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS 优雅的命名">
 <meta property="og:url" content="http://example.com/2016/07/07/iOS-%E4%BC%98%E9%9B%85%E7%9A%84%E5%91%BD%E5%90%8D/index.html">
 <meta property="og:site_name" content="guanzhendong">
-<meta property="og:description" content="##减少缩写命名缩写只用于通用专业术语，如 URL，不可自创命名缩写，如 Ctr、Msg。命名宁可长一些，也不要难于理解。 是否在看别人代码时各种缩写而不知其所以然？简短的名字确实比较好，但不可滥用缩写导致失去可读性。 ##过程化动作发生之前用 Will，发生之后用 Did，询问是否发生用 Should。 每个处理都是有一定过程的，这个处理往往会产生一些通知和回调，好的命名必须要明确当前过程中的步">
+<meta property="og:description" content="减少缩写命名缩写只用于通用专业术语，如 URL，不可自创命名缩写，如 Ctr、Msg。命名宁可长一些，也不要难于理解。 是否在看别人代码时各种缩写而不知其所以然？简短的名字确实比较好，但不可滥用缩写导致失去可读性。 过程化动作发生之前用 Will，发生之后用 Did，询问是否发生用 Should。 每个处理都是有一定过程的，这个处理往往会产生一些通知和回调，好的命名必须要明确当前过程中的步骤。命名">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2016-07-07T02:03:04.000Z">
-<meta property="article:modified_time" content="2022-09-21T02:03:36.199Z">
+<meta property="article:modified_time" content="2022-09-21T09:48:53.437Z">
 <meta property="article:author" content="guanzhendong">
 <meta property="article:tag" content="iOS">
 <meta name="twitter:card" content="summary_large_image">
@@ -249,11 +249,11 @@
             
               <div class="markdown-body">
                 
-                <p>##减少缩写<br>命名缩写只用于通用专业术语，如 URL，不可自创命名缩写，如 Ctr、Msg。命名宁可长一些，也不要难于理解。</p>
+                <h2 id="减少缩写"><a href="#减少缩写" class="headerlink" title="减少缩写"></a>减少缩写</h2><p>命名缩写只用于通用专业术语，如 URL，不可自创命名缩写，如 Ctr、Msg。命名宁可长一些，也不要难于理解。</p>
 <p>是否在看别人代码时各种缩写而不知其所以然？简短的名字确实比较好，但不可滥用缩写导致失去可读性。</p>
-<p>##过程化<br>动作发生之前用 Will，发生之后用 Did，询问是否发生用 Should。</p>
+<h2 id="过程化"><a href="#过程化" class="headerlink" title="过程化"></a>过程化</h2><p>动作发生之前用 Will，发生之后用 Did，询问是否发生用 Should。</p>
 <p>每个处理都是有一定过程的，这个处理往往会产生一些通知和回调，好的命名必须要明确当前过程中的步骤。命名这些通知和回调时最好提供发生前后两个版本，如果发生前要回调确认，请用 Should 命名该回调，并返回一个 BOOL 值。</p>
-<p>##名字空间<br>各种全局作用范围的函数，常量，类，枚举，结构等命名必须加命名前缀。</p>
+<h2 id="名字空间"><a href="#名字空间" class="headerlink" title="名字空间"></a>名字空间</h2><p>各种全局作用范围的函数，常量，类，枚举，结构等命名必须加命名前缀。</p>
 <p>Objective-C中没有C++那样的名字空间概念，也没有Java包名的概念，随着工程代码的增加，难免会出现名字冲突，因此全局作用范围的名字必须唯一。比较经典的做法就是加命名前缀。大多数人认为命名前缀只是在类的前面加几个大写字母，其实不仅仅如此。</p>
 <p>•类型(类、枚举、结构)命名前要加相关模块前缀。</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs objectivec"><span class="hljs-built_in">UIView</span> <br><span class="hljs-built_in">NSString</span> <br><span class="hljs-built_in">CGRect</span> <br></code></pre></td></tr></table></figure>
@@ -264,31 +264,28 @@
 <p> •枚举类型命名要加相关类名前缀，并且枚举值命名要加枚举类型前缀。</p>
 <figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs elm">typedef <span class="hljs-type">NS_ENUM</span>(<span class="hljs-type">NSInteger</span>, <span class="hljs-type">UIViewAnimationTransition</span>) &#123; <br>    <span class="hljs-type">UIViewAnimationTransitionNone</span>, <br>    <span class="hljs-type">UIViewAnimationTransitionFlipFromLeft</span>, <br>    <span class="hljs-type">UIViewAnimationTransitionFlipFromRight</span>, <br>    <span class="hljs-type">UIViewAnimationTransitionCurlUp</span>, <br>    <span class="hljs-type">UIViewAnimationTransitionCurlDown</span>, <br>&#125;; <br></code></pre></td></tr></table></figure>
 <p>做到以上几点几乎可以做到名字不会冲突。</p>
-<p>##参数提示<br>方法命名时，每个参数前要加参数的名称提示。</p>
+<h2 id="参数提示"><a href="#参数提示" class="headerlink" title="参数提示"></a>参数提示</h2><p>方法命名时，每个参数前要加参数的名称提示。</p>
 <figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs erlang">- <span class="hljs-params">(id)</span>initWithNibName:<span class="hljs-params">(NSString *)</span>nibNameOrNil bundle:<span class="hljs-params">(NSBundle *)</span>nibBundleOrNil <br>- <span class="hljs-params">(void)</span>performSegueWithIdentifier:<span class="hljs-params">(NSString *)</span>identifier sender:<span class="hljs-params">(id)</span>sender <br></code></pre></td></tr></table></figure>
 
-<p>##对象命名<br>给一个带修饰的对象命名时要采用修饰+类型的方式，而不是先指定其类型。</p>
+<h2 id="对象命名"><a href="#对象命名" class="headerlink" title="对象命名"></a>对象命名</h2><p>给一个带修饰的对象命名时要采用修饰+类型的方式，而不是先指定其类型。</p>
 <p>很多人喜欢把对象的类型放在对象的命名前面，从而来标识一个对象是什么类型，这很不符合Objective-C语言的特点，容易引起歧义，比如一个 UILabel 对象：</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs awk">titleLabel      <span class="hljs-regexp">//</span>表示标题的label，是UIlabel对象 <br>labelTitle      <span class="hljs-regexp">//</span>label的标题？似乎是一个NSString？ <br> <br>confirmButton   <span class="hljs-regexp">//</span>确认按钮 <br>buttonConfirm   <span class="hljs-regexp">//</span>不自然的命名，看上去像是按钮点击动作。 <br></code></pre></td></tr></table></figure>
 
-<p>##方法命名符合语法</p>
-<p>大部分方法可以分成下面两类，而这两类往往被乱用。它们是：<br>•要什么<br>•做什么</p>
+<h2 id="方法命名符合语法"><a href="#方法命名符合语法" class="headerlink" title="方法命名符合语法"></a>方法命名符合语法</h2><p>大部分方法可以分成下面两类，而这两类往往被乱用。它们是：<br>•要什么<br>•做什么</p>
 <p>“要什么”表示取得某个对象，要以名词作为方法的开头；“做什么”表示执行某种操作，要以动词作为方法开头。看看下面这个命名方式：</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">- (XXItem *)itemNamed:(NSString *)name           <span class="hljs-regexp">//</span>Good. 意思清晰 <br>- (XXItem *)findItemWithName:(NSString *)name    <span class="hljs-regexp">//</span>更像是一种操作，而不是返回一个对象。 <br></code></pre></td></tr></table></figure>
 
 <p>findItemWithName 这个命名表示一种操作，而无需返回对象，比如它可以用于设置类的内部成员，比如：</p>
 <figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs lasso">- (<span class="hljs-literal">void</span>)findItemWithName:(NSString *)name&#123; <br>    <span class="hljs-params">...</span> <br>    <span class="hljs-built_in">self</span>.foundItem = xxx; <br>    <span class="hljs-params">...</span> <br>&#125; <br></code></pre></td></tr></table></figure>
 
-<p>##get<br>“要什么”往往被胡乱命名为get开头的方法。首先get是一个动词，所以它还是“做什么”或者说“做的是要什么”。那么get方法不要用于返回对象，但它可用于参数中返回。</p>
+<h2 id="get"><a href="#get" class="headerlink" title="get"></a>get</h2><p>“要什么”往往被胡乱命名为get开头的方法。首先get是一个动词，所以它还是“做什么”或者说“做的是要什么”。那么get方法不要用于返回对象，但它可用于参数中返回。</p>
 <figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs axapta">- (XXItem *)getItemAtIndex:(NSUInteger)<span class="hljs-keyword">index</span>                  <span class="hljs-comment">//Bad!! 不规范的命名 </span><br>- (XXItem *)itemAtIndex:(NSUInteger)<span class="hljs-keyword">index</span>                     <span class="hljs-comment">//Good, 命名清晰 </span><br>- (<span class="hljs-keyword">void</span>)getItem:(XXItem **)outItem atIndex:(NSUInteger)<span class="hljs-keyword">index</span>  <span class="hljs-comment">//比较符合规范，但第二种更好。 </span><br></code></pre></td></tr></table></figure>
 
-<p>##可知性</p>
-<p>回调时被调用者要知道其调用者</p>
+<h2 id="可知性"><a href="#可知性" class="headerlink" title="可知性"></a>可知性</h2><p>回调时被调用者要知道其调用者</p>
 <p>可以在回调方法中第一个参数中加上调用者：</p>
 <figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs erlang">- <span class="hljs-params">(BOOL)</span>application:<span class="hljs-params">(UIApplication *)</span>application willFinishLaunchingWithOptions:<span class="hljs-params">(NSDictionary *)</span>launchOptions <br>- <span class="hljs-params">(void)</span>buttonTapped:<span class="hljs-params">(UIButton*)</span>sender <br></code></pre></td></tr></table></figure>
 
-<p>##常量还是宏</p>
-<p>全局常量不可使用宏定义<br>我们经常看到一些用宏定义的通知，关键字等。其实这么做是非常危险的，因为宏很可能被重定义，而且引用不同的文件可能会导致宏的不同，所以尽量使用const来定义常量。</p>
+<h2 id="常量还是宏"><a href="#常量还是宏" class="headerlink" title="常量还是宏"></a>常量还是宏</h2><p>全局常量不可使用宏定义<br>我们经常看到一些用宏定义的通知，关键字等。其实这么做是非常危险的，因为宏很可能被重定义，而且引用不同的文件可能会导致宏的不同，所以尽量使用const来定义常量。</p>
 
                 
               </div>

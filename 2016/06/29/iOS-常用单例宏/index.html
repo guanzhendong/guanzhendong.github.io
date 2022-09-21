@@ -16,15 +16,15 @@
   <meta name="author" content="guanzhendong">
   <meta name="keywords" content="iOS">
   
-    <meta name="description" content="##在你的宏文件里面加入单例宏，快捷创建单例 1234567891011121314151617181920212223#define SINGLETON_INTERFACE(className) + (instancetype)shared##className;#define SINGLETON_IMPLEMENTATION(className) \static id instance; \+">
+    <meta name="description" content="在你的宏文件里面加入单例宏，快捷创建单例1234567891011121314151617181920212223#define SINGLETON_INTERFACE(className) + (instancetype)shared##className;#define SINGLETON_IMPLEMENTATION(className) \static id instance; \+ (i">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS 常用单例宏">
 <meta property="og:url" content="http://example.com/2016/06/29/iOS-%E5%B8%B8%E7%94%A8%E5%8D%95%E4%BE%8B%E5%AE%8F/index.html">
 <meta property="og:site_name" content="guanzhendong">
-<meta property="og:description" content="##在你的宏文件里面加入单例宏，快捷创建单例 1234567891011121314151617181920212223#define SINGLETON_INTERFACE(className) + (instancetype)shared##className;#define SINGLETON_IMPLEMENTATION(className) \static id instance; \+">
+<meta property="og:description" content="在你的宏文件里面加入单例宏，快捷创建单例1234567891011121314151617181920212223#define SINGLETON_INTERFACE(className) + (instancetype)shared##className;#define SINGLETON_IMPLEMENTATION(className) \static id instance; \+ (i">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2016-06-29T01:56:56.000Z">
-<meta property="article:modified_time" content="2022-09-21T01:57:55.533Z">
+<meta property="article:modified_time" content="2022-09-21T07:54:51.587Z">
 <meta property="article:author" content="guanzhendong">
 <meta property="article:tag" content="宏">
 <meta name="twitter:card" content="summary_large_image">
@@ -195,7 +195,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          689 字
+          680 字
         
       </span>
     
@@ -249,15 +249,11 @@
             
               <div class="markdown-body">
                 
-                <p>##在你的宏文件里面加入单例宏，快捷创建单例</p>
-<figure class="highlight livescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs livescript"><span class="hljs-comment">#define SINGLETON_INTERFACE(className) + (instancetype)shared##className;</span><br><br><span class="hljs-comment">#define SINGLETON_IMPLEMENTATION(className) \</span><br><span class="hljs-keyword">static</span> id instance; <span class="hljs-string">\</span><br>+ (instancetype)allocWithZone:(struct _NSZone *)zone &#123; <span class="hljs-string">\</span><br>    <span class="hljs-keyword">static</span> dispatch_once_t onceToken; <span class="hljs-string">\</span><br>    dispatch_once(&amp;onceToken, ^&#123; <span class="hljs-string">\</span><br>        instance = [super allocWithZone:zone]; <span class="hljs-string">\</span><br>    &#125;); <span class="hljs-string">\</span><br>    <span class="hljs-keyword">return</span> instance; <span class="hljs-string">\</span><br>&#125; <span class="hljs-string">\</span><br> <span class="hljs-string">\</span><br>+ (instancetype)shared<span class="hljs-comment">##className &#123; \</span><br>    <span class="hljs-keyword">static</span> dispatch_once_t onceToken; <span class="hljs-string">\</span><br>    dispatch_once(&amp;onceToken, ^&#123; <span class="hljs-string">\</span><br>        instance = [[self alloc] init]; <span class="hljs-string">\</span><br>    &#125;); <span class="hljs-string">\</span><br>    <span class="hljs-keyword">return</span> instance; <span class="hljs-string">\</span><br>&#125; <span class="hljs-string">\</span><br> <span class="hljs-string">\</span><br>- (id)copyWithZone:(NSZone *)zone &#123; <span class="hljs-string">\</span><br>    <span class="hljs-keyword">return</span> instance; <span class="hljs-string">\</span><br>&#125;<br></code></pre></td></tr></table></figure>
+                <h2 id="在你的宏文件里面加入单例宏，快捷创建单例"><a href="#在你的宏文件里面加入单例宏，快捷创建单例" class="headerlink" title="在你的宏文件里面加入单例宏，快捷创建单例"></a>在你的宏文件里面加入单例宏，快捷创建单例</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs objective-c">#define SINGLETON_INTERFACE(className) + (instancetype)shared##className;<br><br>#define SINGLETON_IMPLEMENTATION(className) \<br>static id instance; \<br>+ (instancetype)allocWithZone:(struct _NSZone *)zone &#123; \<br>    static dispatch_once_t onceToken; \<br>    dispatch_once(&amp;onceToken, ^&#123; \<br>        instance = [super allocWithZone:zone]; \<br>    &#125;); \<br>    return instance; \<br>&#125; \<br> \<br>+ (instancetype)shared##className &#123; \<br>    static dispatch_once_t onceToken; \<br>    dispatch_once(&amp;onceToken, ^&#123; \<br>        instance = [[self alloc] init]; \<br>    &#125;); \<br>    return instance; \<br>&#125; \<br> \<br>- (id)copyWithZone:(NSZone *)zone &#123; \<br>    return instance; \<br>&#125;<br></code></pre></td></tr></table></figure>
 
-<p>#调用</p>
-<p>###.h</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">SINGLETON_INTERFACE</span><span class="hljs-params">(Service)</span></span><br></code></pre></td></tr></table></figure>
+<h2 id="调用"><a href="#调用" class="headerlink" title="调用"></a>调用</h2><h3 id="h"><a href="#h" class="headerlink" title=".h"></a>.h</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs objective-c">SINGLETON_INTERFACE(Service)<br></code></pre></td></tr></table></figure>
 
-<p>###.m</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus"><span class="hljs-function"><span class="hljs-title">SINGLETON_IMPLEMENTATION</span><span class="hljs-params">(Service)</span></span><br></code></pre></td></tr></table></figure>
+<h3 id="m"><a href="#m" class="headerlink" title=".m"></a>.m</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs objective-c">SINGLETON_IMPLEMENTATION(Service)<br></code></pre></td></tr></table></figure>
 
                 
               </div>
