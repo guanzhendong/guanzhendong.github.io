@@ -23,13 +23,13 @@
 <meta property="og:site_name" content="guanzhendong&#39;s blog">
 <meta property="og:description" content="系统自带的右滑返回只有从边缘才有效，而我们希望从屏幕任何地方都可以右滑返回。 在基类导航控制器BaseNavigationController里面做处理 1234567891011121314&#x2F;&#x2F; 获取系统自带滑动手势的target对象    id target &#x3D; self.interactivePopGestureRecognizer.delegate;        &#x2F;&#x2F; 创建全屏滑动手势，">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1208206-e40666eff0899ddf.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://example.com/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%85%A8%E5%B1%8F%E5%8F%B3%E6%BB%91%E8%BF%94%E5%9B%9E%E6%89%8B%E5%8A%BF/screenshot.gif">
 <meta property="article:published_time" content="2016-11-15T02:03:59.000Z">
-<meta property="article:modified_time" content="2022-09-22T06:24:32.104Z">
+<meta property="article:modified_time" content="2022-09-29T11:12:22.069Z">
 <meta property="article:author" content="guanzhendong">
 <meta property="article:tag" content="iOS">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1208206-e40666eff0899ddf.gif?imageMogr2/auto-orient/strip">
+<meta name="twitter:image" content="http://example.com/img/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%85%A8%E5%B1%8F%E5%8F%B3%E6%BB%91%E8%BF%94%E5%9B%9E%E6%89%8B%E5%8A%BF/screenshot.gif">
   
   
   
@@ -268,7 +268,7 @@
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs objectivec"><span class="hljs-comment">// 获取系统自带滑动手势的target对象</span><br>    <span class="hljs-type">id</span> target = <span class="hljs-keyword">self</span>.interactivePopGestureRecognizer.delegate;<br>    <br>    <span class="hljs-comment">// 创建全屏滑动手势，调用系统自带滑动手势的target的action方法</span><br>    <span class="hljs-built_in">UIPanGestureRecognizer</span> *pan = [[<span class="hljs-built_in">UIPanGestureRecognizer</span> alloc] initWithTarget:target action:<span class="hljs-keyword">@selector</span>(handleNavigationTransition:)];<br>    <br>    <span class="hljs-comment">// 设置手势代理，拦截手势触发</span><br>    pan.delegate = <span class="hljs-keyword">self</span>;<br>    <br>    <span class="hljs-comment">// 给导航控制器的view添加全屏滑动手势</span><br>    [<span class="hljs-keyword">self</span>.view addGestureRecognizer:pan];<br>    <br>    <span class="hljs-comment">// 禁止使用系统自带的滑动手势</span><br>    <span class="hljs-keyword">self</span>.interactivePopGestureRecognizer.enabled = <span class="hljs-literal">NO</span>;<br></code></pre></td></tr></table></figure>
 
 <p>效果图</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1208206-e40666eff0899ddf.gif?imageMogr2/auto-orient/strip" srcset="/img/loading.gif" lazyload alt="screenshot.gif"></p>
+<p><img src="/../img/%E8%87%AA%E5%AE%9A%E4%B9%89%E5%85%A8%E5%B1%8F%E5%8F%B3%E6%BB%91%E8%BF%94%E5%9B%9E%E6%89%8B%E5%8A%BF/screenshot.gif" srcset="/img/loading.gif" lazyload alt="screenshot.gif"></p>
 <p>Demo：<br><a target="_blank" rel="noopener" href="https://github.com/guanzhendong/ScreenEdgePanGestureDemo">https://github.com/guanzhendong/ScreenEdgePanGestureDemo</a></p>
 
                 

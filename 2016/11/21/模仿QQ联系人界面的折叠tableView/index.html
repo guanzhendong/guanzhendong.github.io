@@ -23,13 +23,13 @@
 <meta property="og:site_name" content="guanzhendong&#39;s blog">
 <meta property="og:description" content="效果图 原理每个分组是一个UITableViewHeaderFooterView 1234567891011121314151617@class FoldedTableViewHeaderFooterViewModel;typedef void(^DidSelectBlock)(BOOL isExpanded);@interface FoldedTableViewHeaderFooterView">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1208206-d513468b93710ac0.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://example.com/img/%E6%A8%A1%E4%BB%BFQQ%E8%81%94%E7%B3%BB%E4%BA%BA%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8A%98%E5%8F%A0tableView/screenshot.gif">
 <meta property="article:published_time" content="2016-11-21T07:05:06.000Z">
-<meta property="article:modified_time" content="2022-09-22T06:24:44.987Z">
+<meta property="article:modified_time" content="2022-09-29T11:16:21.326Z">
 <meta property="article:author" content="guanzhendong">
 <meta property="article:tag" content="iOS">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1208206-d513468b93710ac0.gif?imageMogr2/auto-orient/strip">
+<meta name="twitter:image" content="http://example.com/img/%E6%A8%A1%E4%BB%BFQQ%E8%81%94%E7%B3%BB%E4%BA%BA%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8A%98%E5%8F%A0tableView/screenshot.gif">
   
   
   
@@ -263,7 +263,7 @@
             
               <div class="markdown-body">
                 
-                <h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><p><img src="http://upload-images.jianshu.io/upload_images/1208206-d513468b93710ac0.gif?imageMogr2/auto-orient/strip" srcset="/img/loading.gif" lazyload alt="screenshot.gif"></p>
+                <h1 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h1><p><img src="/../img/%E6%A8%A1%E4%BB%BFQQ%E8%81%94%E7%B3%BB%E4%BA%BA%E7%95%8C%E9%9D%A2%E7%9A%84%E6%8A%98%E5%8F%A0tableView/screenshot.gif" srcset="/img/loading.gif" lazyload alt="screenshot.gif"></p>
 <h1 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h1><p>每个分组是一个UITableViewHeaderFooterView</p>
 <figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs objectivec"><span class="hljs-class"><span class="hljs-keyword">@class</span> <span class="hljs-title">FoldedTableViewHeaderFooterViewModel</span>;</span><br><br><span class="hljs-keyword">typedef</span> <span class="hljs-type">void</span>(^DidSelectBlock)(<span class="hljs-type">BOOL</span> isExpanded);<br><br><span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">FoldedTableViewHeaderFooterView</span> : <span class="hljs-title">UITableViewHeaderFooterView</span></span><br><br><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) <span class="hljs-built_in">UIImageView</span> *arrowImageView;<br><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) <span class="hljs-built_in">UILabel</span> *titleLabel;<br><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) <span class="hljs-built_in">UILabel</span> *numberLabel;<br><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) <span class="hljs-built_in">UIView</span> *topLineView;<br><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) <span class="hljs-built_in">UIView</span> *bottomLineView;<br><br>- (<span class="hljs-type">void</span>)setupWithModel:(FoldedTableViewHeaderFooterViewModel *)model<br>               section:(<span class="hljs-built_in">NSInteger</span>)section<br>        didSelectBlock:(DidSelectBlock)block;<br><br><span class="hljs-keyword">@end</span><br></code></pre></td></tr></table></figure>
 
