@@ -214,6 +214,168 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
+        <a href="/2022/06/06/iOS%E8%81%8A%E5%A4%A9%E9%A1%B5%E5%9B%BE%E7%89%87%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" target="_self">
+          iOS聊天页图片性能优化
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2022/06/06/iOS%E8%81%8A%E5%A4%A9%E9%A1%B5%E5%9B%BE%E7%89%87%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" target="_self">
+        <div>
+          在iOS开发中，聊天功能常常遇到，而聊天页里面图片相关的功能，一般包括  从相册选择照片发送  照片展示在聊天列表  点击列表里面的照片进行预览    在SDK中，是直接获取到相册框架返回的image，进行缓存，在聊天列表取缓存赋值到imageView上，这样做存在以下问题  内存占用过大，内存小的手机容易崩溃 列表上图片较多时，滑动会有卡顿   这篇文章来探讨一下这些功能相关的优化。 从相册选择
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2022-06-06 11:23" pubdate>
+              2022-06-06
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" class="category-chain-item">性能优化</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/10/12/WKWebView%E7%9A%84cookie%E6%B3%A8%E5%85%A5%E9%97%AE%E9%A2%98/" target="_self">
+          WKWebView的cookie注入问题
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2021/10/12/WKWebView%E7%9A%84cookie%E6%B3%A8%E5%85%A5%E9%97%AE%E9%A2%98/" target="_self">
+        <div>
+          前因 WKWebView有自己的进程，独立于iOS App的进程，使用自己的存储空间来存储cookie和cache，WKWebView会忽视NSURLCache、NSHTTPCookieStorage、NSCredentialStorage这些默认的网络存储。 WKWebView 发起的请求不会自动带上存储于 NSHTTPCookieStorage 容器中的 Cookie。  所以我们需要自己注入
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-10-12 10:30" pubdate>
+              2021-10-12
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/WKWebView/" class="category-chain-item">WKWebView</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2021/08/18/iOS-%E8%BD%AC%E5%9C%BA%E5%8A%A8%E7%94%BB%EF%BC%9A%E4%BB%A5Push%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Present%E8%B7%B3%E8%BD%AC/" target="_self">
+          iOS 转场动画：以Push方式实现Present跳转
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2021/08/18/iOS-%E8%BD%AC%E5%9C%BA%E5%8A%A8%E7%94%BB%EF%BC%9A%E4%BB%A5Push%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Present%E8%B7%B3%E8%BD%AC/" target="_self">
+        <div>
+          在iOS开发中，页面跳转一般有两种方式：  navigation：push &amp; pop，动画是从右到左 modal（模态）：presnet &amp; dismiss，动画是从下到上  在SDK开发中，由于需要减小侵入性，通常会使用modal方式弹出SDK的页面，那么默认唤起的动画就是从下到上。现在有一个需求，需要从右到左唤起SDK的页面，所以我们需要用到转场动画，将present的动画改
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2021-08-18 10:55" pubdate>
+              2021-08-18
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E5%8A%A8%E7%94%BB/" class="category-chain-item">动画</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
         <a href="/2019/02/03/SourceTree%E6%93%8D%E4%BD%9C%E5%A4%87%E5%BF%98%E5%BD%95/" target="_self">
           SourceTree操作备忘录
         </a>
@@ -578,168 +740,6 @@
       <span class="category-chain">
         
   <a href="/categories/CocoaPods/" class="category-chain-item">CocoaPods</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2018/01/10/XCode9%E7%9A%84%E6%96%B0%E5%8F%98%E5%8C%96/" target="_self">
-          XCode9的新变化
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2018/01/10/XCode9%E7%9A%84%E6%96%B0%E5%8F%98%E5%8C%96/" target="_self">
-        <div>
-          1.折叠代码焦点在方法的实现体的方法名上,按comman键,则整个函数会被框住.用来标志这个方法的起点和终点 此时单击,出现菜单  在菜单里,有个Fold,可以用来折叠方法,这个折叠现在有个动画效果 常用的重构方式都已经集成在这个右键弹出菜单中了,可见,XCode9对于重构的支持度又增加了,以后重构代码将更加方便快捷 在XCode9之前,在变量或方法上,按CMD+单击,是直接Jump to Def
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2018-01-10 10:19" pubdate>
-              2018-01-10
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Xcode/" class="category-chain-item">Xcode</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2018/01/09/NS-OPTIONS%E7%9A%84%E7%94%A8%E6%B3%95/" target="_self">
-          NS_OPTIONS的用法
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2018/01/09/NS-OPTIONS%E7%9A%84%E7%94%A8%E6%B3%95/" target="_self">
-        <div>
-          NS_OPTIONS主要用于多选选项，表示一个选项集合 定义： 1234567typedef NS_OPTIONS(NSUInteger, MyOption) &#123;  MyOptionNone = 0, //二进制0000,十进制0  MyOption1 = 1 &lt;&lt; 0,//0001,1  MyOption2 = 1 &lt;&lt; 1,//0010,2  MyOption
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2018-01-09 19:16" pubdate>
-              2018-01-09
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Foundation/" class="category-chain-item">Foundation</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2017/12/20/iOS-%E7%AE%A1%E7%90%86separator%E7%9A%84UITableViewCell%E5%AD%90%E7%B1%BB/" target="_self">
-          iOS 管理separator的UITableViewCell子类
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2017/12/20/iOS-%E7%AE%A1%E7%90%86separator%E7%9A%84UITableViewCell%E5%AD%90%E7%B1%BB/" target="_self">
-        <div>
-          123456@interface ZDBaseTableViewCell : UITableViewCell@property (nonatomic, assign) BOOL showsSeparator;// default is YES@property (nonatomic, assign) CGFloat separatorLeading;// default is 15.f@end 1
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2017-12-20 10:15" pubdate>
-              2017-12-20
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/UIKit/" class="category-chain-item">UIKit</a>
   
   
 
