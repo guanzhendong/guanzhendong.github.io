@@ -214,168 +214,6 @@
     <article class="col-12 col-md-12 mx-auto index-info">
       <h1 class="index-header">
         
-        <a href="/2022/06/06/iOS%E8%81%8A%E5%A4%A9%E9%A1%B5%E5%9B%BE%E7%89%87%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" target="_self">
-          iOS聊天页图片性能优化
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2022/06/06/iOS%E8%81%8A%E5%A4%A9%E9%A1%B5%E5%9B%BE%E7%89%87%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" target="_self">
-        <div>
-          在iOS开发中，聊天功能常常遇到，而聊天页里面图片相关的功能，一般包括  从相册选择照片发送  照片展示在聊天列表  点击列表里面的照片进行预览    在SDK中，是直接获取到相册框架返回的image，进行缓存，在聊天列表取缓存赋值到imageView上，这样做存在以下问题  内存占用过大，内存小的手机容易崩溃 列表上图片较多时，滑动会有卡顿   这篇文章来探讨一下这些功能相关的优化。 从相册选择
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2022-06-06 11:23" pubdate>
-              2022-06-06
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" class="category-chain-item">性能优化</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/10/12/WKWebView%E7%9A%84cookie%E6%B3%A8%E5%85%A5%E9%97%AE%E9%A2%98/" target="_self">
-          WKWebView的cookie注入问题
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2021/10/12/WKWebView%E7%9A%84cookie%E6%B3%A8%E5%85%A5%E9%97%AE%E9%A2%98/" target="_self">
-        <div>
-          前因 WKWebView有自己的进程，独立于iOS App的进程，使用自己的存储空间来存储cookie和cache，WKWebView会忽视NSURLCache、NSHTTPCookieStorage、NSCredentialStorage这些默认的网络存储。 WKWebView 发起的请求不会自动带上存储于 NSHTTPCookieStorage 容器中的 Cookie。  所以我们需要自己注入
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-10-12 10:30" pubdate>
-              2021-10-12
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/WKWebView/" class="category-chain-item">WKWebView</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2021/08/18/iOS-%E8%BD%AC%E5%9C%BA%E5%8A%A8%E7%94%BB%EF%BC%9A%E4%BB%A5Push%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Present%E8%B7%B3%E8%BD%AC/" target="_self">
-          iOS 转场动画：以Push方式实现Present跳转
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2021/08/18/iOS-%E8%BD%AC%E5%9C%BA%E5%8A%A8%E7%94%BB%EF%BC%9A%E4%BB%A5Push%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0Present%E8%B7%B3%E8%BD%AC/" target="_self">
-        <div>
-          在iOS开发中，页面跳转一般有两种方式：  navigation：push &amp; pop，动画是从右到左 modal（模态）：presnet &amp; dismiss，动画是从下到上  在SDK开发中，由于需要减小侵入性，通常会使用modal方式弹出SDK的页面，那么默认唤起的动画就是从下到上。现在有一个需求，需要从右到左唤起SDK的页面，所以我们需要用到转场动画，将present的动画改
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-08-18 10:55" pubdate>
-              2021-08-18
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%8A%A8%E7%94%BB/" class="category-chain-item">动画</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
         <a href="/2020/09/02/%E5%8C%85%E4%BD%93%E6%A3%80%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95%E5%8F%8A%E6%80%BB%E7%BB%93/" target="_self">
           包体检优化记录及总结
         </a>
@@ -740,6 +578,168 @@
       <span class="category-chain">
         
   <a href="/categories/UIKit/" class="category-chain-item">UIKit</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2018/03/21/%E9%98%B2%E6%AD%A2navigation%E5%A4%9A%E6%AC%A1push%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2/" target="_self">
+          防止navigation多次push一个页面
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/03/21/%E9%98%B2%E6%AD%A2navigation%E5%A4%9A%E6%AC%A1push%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2/" target="_self">
+        <div>
+          场景：快速多次点击cell跳转到另一个页面，另一个页面被push多次。 原因：push后的页面有耗时操作或者刚好push到另一个页面时，另一个页面正好在reloadData卡住主线程。造成点击cell时卡住了。 解决方法：在基类导航控制器中重写导航控制器的push方法。 1234567891011121314151617181920212223242526272829303132#import &
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-03-21 10:22" pubdate>
+              2018-03-21
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/UIKit/" class="category-chain-item">UIKit</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2018/01/18/iOS-%E6%B7%BB%E5%8A%A0%E7%B1%BB%E5%89%8D%E7%BC%80%E3%80%81%E4%BF%AE%E6%94%B9%E7%B1%BB%E5%90%8D/" target="_self">
+          iOS-添加类前缀、修改类名
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/01/18/iOS-%E6%B7%BB%E5%8A%A0%E7%B1%BB%E5%89%8D%E7%BC%80%E3%80%81%E4%BF%AE%E6%94%B9%E7%B1%BB%E5%90%8D/" target="_self">
+        <div>
+          修改已有类的名称新建一个工程后，默认的AppDelegate.h，AppDelegate.m 和 ViewController.h，ViewController.m都是没有前缀的，如果你想给他们都加上前缀，可以点开AppDelegate.h，选中AppDelegate，右键－Refactor－Rename，  然后自己加上前缀（我加的是My)，然后点击Preview，   save一下就好了，可以
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-01-18 10:21" pubdate>
+              2018-01-18
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Xcode/" class="category-chain-item">Xcode</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2018/01/15/CocoaPods%E6%9B%B4%E6%96%B0%E6%8A%80%E5%B7%A7/" target="_self">
+          CocoaPods更新技巧
+        </a>
+      </h1>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/2018/01/15/CocoaPods%E6%9B%B4%E6%96%B0%E6%8A%80%E5%B7%A7/" target="_self">
+        <div>
+          不更新podspec CocoaPods 在执行 pod install 和 pod update 时，会默认先更新一次 Podspec 索引。使用 –no-repo-update 参数可以禁止其做索引更新操作。如下所示： pod install –no-repo-updatepod update –no-repo-update
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2018-01-15 10:20" pubdate>
+              2018-01-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/CocoaPods/" class="category-chain-item">CocoaPods</a>
   
   
 
