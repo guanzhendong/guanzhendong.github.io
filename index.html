@@ -458,7 +458,13 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2019/01/11/copy%E3%80%81mutableCopy/" target="_self">
+          <img src="/img/copy%E3%80%81mutableCopy/head.webp" srcset="/img/loading.gif" lazyload alt="copy、mutableCopy">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h1 class="index-header">
         
         <a href="/2019/01/11/copy%E3%80%81mutableCopy/" target="_self">
@@ -467,9 +473,9 @@
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2019/01/11/copy%E3%80%81mutableCopy/" target="_self">
+      <a class="index-excerpt " href="/2019/01/11/copy%E3%80%81mutableCopy/" target="_self">
         <div>
-          copy：对于可变对象为深拷贝，引用计数不改变；对于不可变对象是浅拷贝， 引用计数每次加一。始终返回一个不可变对象。   mutableCopy：始终是深拷贝，引用计数不改变。始终返回一个可变对象。     copy mutableCopy    不可变对象 不可变对象（浅拷贝） 可变对象（深拷贝）   可变对象 不可变对象（深拷贝） 可变对象（深拷贝）   浅拷贝：指针拷贝深拷贝：内容拷贝
+          对于不同对象，copy、mutableCopy有什么不同的结果？
         </div>
       </a>
 
