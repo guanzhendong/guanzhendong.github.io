@@ -692,7 +692,13 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2018/03/21/%E9%98%B2%E6%AD%A2navigation%E5%A4%9A%E6%AC%A1push%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2/" target="_self">
+          <img src="/img/%E9%98%B2%E6%AD%A2navigation%E5%A4%9A%E6%AC%A1push%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2/head.jpeg" srcset="/img/loading.gif" lazyload alt="防止navigation多次push一个页面">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h1 class="index-header">
         
         <a href="/2018/03/21/%E9%98%B2%E6%AD%A2navigation%E5%A4%9A%E6%AC%A1push%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2/" target="_self">
@@ -701,9 +707,9 @@
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2018/03/21/%E9%98%B2%E6%AD%A2navigation%E5%A4%9A%E6%AC%A1push%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2/" target="_self">
+      <a class="index-excerpt " href="/2018/03/21/%E9%98%B2%E6%AD%A2navigation%E5%A4%9A%E6%AC%A1push%E4%B8%80%E4%B8%AA%E9%A1%B5%E9%9D%A2/" target="_self">
         <div>
-          场景：快速多次点击cell跳转到另一个页面，另一个页面被push多次。 原因：push后的页面有耗时操作或者刚好push到另一个页面时，另一个页面正好在reloadData卡住主线程。造成点击cell时卡住了。 解决方法：在基类导航控制器中重写导航控制器的push方法。 1234567891011121314151617181920212223242526272829303132#import &
+          如何避免快速多次点击cell跳转到另一个页面，另一个页面被push多次？
         </div>
       </a>
 
