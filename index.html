@@ -271,7 +271,13 @@
   <div class="row mx-auto index-card">
     
     
-    <article class="col-12 col-md-12 mx-auto index-info">
+      <div class="col-12 col-md-4 m-auto index-img">
+        <a href="/2021/10/12/WKWebView%E7%9A%84cookie%E6%B3%A8%E5%85%A5%E9%97%AE%E9%A2%98/" target="_self">
+          <img src="/img/WKWebView%E7%9A%84cookie%E6%B3%A8%E5%85%A5%E9%97%AE%E9%A2%98/head.jpeg" srcset="/img/loading.gif" lazyload alt="WKWebView的cookie注入问题">
+        </a>
+      </div>
+    
+    <article class="col-12 col-md-8 mx-auto index-info">
       <h1 class="index-header">
         
         <a href="/2021/10/12/WKWebView%E7%9A%84cookie%E6%B3%A8%E5%85%A5%E9%97%AE%E9%A2%98/" target="_self">
@@ -280,9 +286,9 @@
       </h1>
 
       
-      <a class="index-excerpt index-excerpt__noimg" href="/2021/10/12/WKWebView%E7%9A%84cookie%E6%B3%A8%E5%85%A5%E9%97%AE%E9%A2%98/" target="_self">
+      <a class="index-excerpt " href="/2021/10/12/WKWebView%E7%9A%84cookie%E6%B3%A8%E5%85%A5%E9%97%AE%E9%A2%98/" target="_self">
         <div>
-          前因 WKWebView有自己的进程，独立于iOS App的进程，使用自己的存储空间来存储cookie和cache，WKWebView会忽视NSURLCache、NSHTTPCookieStorage、NSCredentialStorage这些默认的网络存储。 WKWebView 发起的请求不会自动带上存储于 NSHTTPCookieStorage 容器中的 Cookie。  所以我们需要自己注入
+          WKWebView 发起的请求不会自动带上存储于 NSHTTPCookieStorage 容器中的 Cookie，如何将Cookie注入到WKWebView里面呢？
         </div>
       </a>
 
